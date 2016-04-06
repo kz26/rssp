@@ -1,0 +1,5 @@
+<html>
+<p>Usage: ${request.host_url}/feed/FEED_URL</p>
+
+<p>${version}</p>
+</html>
