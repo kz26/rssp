@@ -37,6 +37,6 @@ def get_feed(request):
 						res.body_file.write(x)
 				return res
 			else:
-				return Response(status_code=400)
+				return Response("Invalid content type: " + ct, status_code=400)
 	except requests.exceptions.RequestException as e:
 		return Response(str(e), status_code=400)
